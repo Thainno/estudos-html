@@ -169,6 +169,7 @@
     <p>Funciona como um dicionário, na tag 'dt' é informado o termo e na tag 'dd' é informado a definição desse termo.</p>
     <hr>
     <h1>Links</h1>
+    <h2>Páginas</h2>
     <p>Você pode acessar o meu github pelo link: <a href="https://github.com/thainno" target="_blank" rel="external"> GitHub</a><br>
     Você também pode acessar o meu LinkedIn pelo link: <a href="https://www.linkedin.com/in/thainno-santana/" target="_blank" rel="external"> LinkedIn</a>
     </p>
@@ -178,9 +179,52 @@
     <p> <a href="pagina01.html" rel="next">Clique aqui</a> para acessar a primeira página desse site.<br>
     <a href="pagina02.html" rel="next">Clique aqui</a> para acessar a segunda página desse site.<br>
     <a href="noticias/pagina03.html" rel="next">Clique aqui</a> para acessar nossa página de notícia.
-
-    > SEPARAR EM PASTAS
-    > CONTINUAR EM VÍDEO 29
-</p>  
+    <h2>Downloads</h2>
+    <ul>
+        <li><a href="arquivo-download/teste.pdf" download="teste.pdf" type="application.pdf">Clique aqui</a> para baixar o arquivo pdf.</li>
+        <li><a href="#">Clique aqui</a> para baixar o arquivo Word.</li>
+    </ul>  
+    <p>Você pode encontrar todas as referências para Download de arquivos em: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">https://iana.org</a></p>
+    <hr>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho de seu navegador.</p>
+    <p>Utilizamos a tag (picture e source media type).<br>
+    OBS.: é necessário inserir as imagens em ordem obedecendo os tamanhos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="Imagem grande flexível">        
+    </picture>
+    <hr>
+    <h1>Reprodução de áudios</h1>
+    <p>Utilizamos a tag (audio)</p>
+    <p>Alguns navegadores nãos suportam o formato mp3, podemos utilizar: WAV ou OGG.</p>
+    <audio src="mídia/guanacast-33.mp3" controls></audio>
+    <audio preload="metadata" controls>
+        <source src="mídia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="mídia/guanacast-33.wav" type="audio/wav">
+        <source src="mídia/guanacast-33.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio.</p>
+    </audio>
+    <hr>
+    <h1>Reprodução de vídeos</h1>
+    <p>Consome dados do seu servidor de hospedagem.</p>
+    <p>Temos os formatos mp4, webm e ogv</p>
+    <p>Baixar 'Handbrek' para deixar o vídeo mais leve e menor.</p>
+    <p>Alguns navegadores nãos suportam o formato mp4, podemos utilizar: m4v e webm.</p>
+    <video width="500px" controls poster="videos/imagemrobo.png">
+        <source src="videos/video-maorobo.mp4" type="video/mp4">
+        <source src="videos/video-maorobo.m4v" type="video/m4v">
+        <source src="videos/video-maorobo.ogv" type="video/ogg">
+        <source src="videos/video-maorobo.webm" type="video/webm">
+        <p>Seu navegador não é copativel com vídeos.</p>
+    </video>
+    <hr>
+    <h1>Inserindo vídeo do YouTube</h1>
+    <p>Não consome dados do seu servidor, consome dados do YouTube.<br>
+    Compensa criar um canal no YouTube e colocar o vídeo em seu site.</p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    VIDEO 38
 </body>
-</html>
+</html> 
