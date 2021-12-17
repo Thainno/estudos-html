@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../arquivo-imagens/favico.ico" type="image/x-icon">
+    <title>Resumo HTML5</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <p>
+        <a href="00menu.html" rel="prev">Menu inicial</a> para voltar à página inicial.<br>
+    </p>
+    <hr>
+    <h1>Listas ordenadas</h1>
+    <p>
+        É criada com a tag &lt;ol&gt; e ramificada com a tag &lt;li&gt;.
+    </p>
+    <ol type="1" start="1">
+        <li>Acordar
+        <li>Tomar café
+        <li>Escovar os dentes
+        <li>Ir para o trabalho
+    </ol>
+    <p>
+        Caso necessário inserir uma atividade antes de outra, basta inserir com a tag &lt;li&gt; que a numeração já fica correta.<br>
+        OBS.1: Não precisa fechar a tag após a versão 5 do HTML.<br>
+        Com o parâmetro <strong>type</strong> podemos alterar o tipo de lista.<br>
+        Como o parâmetro <strong>start</strong> podemos indicar em qual valor a lista começa (deve ser sempre numérico). 
+    </p>
+    <h1>Listas não ordenadas</h1>
+    <p>
+        É criada com a tag &lt;ul&gt; e ramificada com a tag &lt;li&gt;.
+    </p>
+    <ul type= 'disc'>
+        <li>Tomate
+        <li>Batata
+        <li>Cenoura
+        <li>Feijão
+    </ul>
+    <p>
+        Podemos atribuir os &lt;type&gt;: 'square', 'circle' ou 'disc'.
+    </p>
+    <h1>Juntando Listas - atividades diárias</h1>
+    <p>
+        Junção das tags &lt;ol&gt; e &lt;li&gt;.
+    </p>
+    <ol>
+            <li type = 'disc'>Obrigatórias</li>
+        <ol>
+            <li>Trabalhar</li>
+            <li>Comer</li>
+            <li>Dormir</li>
+        </ol>
+            <li type="disc">Opcionais</li>
+        <ol>
+            <li>Estudar</li>
+            <li>Jogar</li>
+            <li>Entretenimento</li>
+        </ol>
+    </ol>
+    <h1>Juntando Listas - atividades semanais</h1>
+    <p>
+        Junção das tags &lt;ul&gt;, &lt;ol&gt; e &lt;ol&gt;.
+    </p>
+    <ul type="circle">
+        <li>Segunda</li>
+        <ol>
+            <li>Comer</li>
+            <li>Dormir</li>
+        </ol>
+        <li>Terça</li>
+        <ol>
+            <li>Dormir</li>
+            <li>Trabalhar</li>
+        </ol>
+        <li>Quarta</li>
+        <ol>
+            <li>Trabalhar</li>
+            <li>Comer</li>
+        </ol>
+    </ul>
+    <h1>Lista de Definições</h1>
+    <p>
+        Funciona como um dicionário, na tag &lt;dt&gt; é informado o termo e na tag &lt;dd&gt; é informado a definição desse termo.
+    </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interações de um site.</dd>
+    </dl>
+    
+</body>
+</html>

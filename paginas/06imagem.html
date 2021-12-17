@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../arquivo-imagens/favico.ico" type="image/x-icon">
+    <title>Resumo HTML5</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <a href="00menu.html" rel="prev">Menu inicial</a>
+    <hr>
+    <h1>Inserir imagens</h1>
+    <p>
+        Para inserir uma imagem, utilize a tag &lt;img src="local da imagem" alt="uma referencia para a imagem"&gt;
+    </p>
+    <hr>
+    <h1>Sites para obter imagens</h1>
+    <p>
+        Tem vários, mas vou citar apenas alguns.<br>
+        É muito importante tomar cuidado para não tomar um processo do nada, portanto, fique de olho dos direitos autorais.
+    <p>
+    <p>
+        <a href="https://unsplash.com/" target="_blank" rel="external">https://unsplash.com/</a><br>
+        <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">https://www.pexels.com/pt-br/</a><br>
+        <a href="https://pixabay.com/pt" target="_blank" rel="external">https://pixabay.com/pt</a>
+    </p>
+    <hr>
+    <h1>Programa para formatos e dimenções de Imagens</h1>
+    <p>
+        Para download: <a href="https://www.gimp.org/" target="_blank" rel="external">https://www.gimp.org/</a><br>
+        Para web: <a href="https://www.canva.com/pt_pt/" target="_blank" rel="external">https://www.canva.com/pt_pt/</a>
+    </p>
+    <p>
+        Formato de imagem .JPG é mais compácto e mais leve<br>
+        Formato de imagem .PNG aceita fundo transparente
+    </p>
+    <img src="../arquivo-imagens/logohtml.png" alt="Logo HTML5">
+    <img src="../arquivo-imagens/logocss.png" alt="Logo CSS3">
+    <hr>
+    <h1>Favicon</h1>
+    <p>
+        É o ícone da página presente ao lado do title.
+    </p>
+    <p>
+        É recomendado utilizar imagens com a extenção '.ico'<br>
+        As página indicadas para criar o seu favicon:<br>
+        Imagens pré-definidas: <a href="https://iconarchive.com/" target="_blank" rel="external">https://iconarchive.com/</a> <br>
+        Criar com pixel art: <a href="https://www.favicon.cc/" target="_blank" rel="external">https://www.favicon.cc/</a><br>
+        Para criar a partir de imagem, texto ou emojin: <a href="https://favicon.io/" target="_blank" rel="external">https://favicon.io/</a><br>
+    </p>
+    <p>
+        A imagem que utilizamos foi:
+    </p>
+        <img src="../arquivo-imagens/favico.ico" alt="Favicon utilizado na página">
+    <p>
+        Basta inserir a tag &lt;link:"favicon"&gt; no cabeçalho &lt;head&gt;.
+    </p>
+    <hr>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho de seu navegador para testar essa funcionalidade.
+    </p>
+    <p>
+        Utilizamos a tag &lt;picture&gt; e &lt;source media type&gt;.<br>
+        OBS.: é necessário inserir as imagens em ordem obedecendo os tamanhos.
+    </p>
+    <p>
+        Foi utilizado 3 imagens de tamanhos diferentes para essa funcionalidade, sendo elas alteradas com o tamanho de página em 750px (pequena para a média), e 1050px (média para a grande) respectivamente.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../arquivo-imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../arquivo-imagens/img-m.png" type="image/png">
+        <img src="../arquivo-imagens/img-g.png" alt="Imagem grande flexível">        
+    </picture>
+</body>
+</html>

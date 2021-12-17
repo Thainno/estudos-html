@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícia</title>
+    <link rel="shortcut icon" href="../arquivo-imagens/favico.ico" type="image/x-icon">
+    <title>Resumo HTML5</title>
 </head>
 <body>
-    <h1>Essa é nossa página de notícias</h1>
-    <p><a href="pagprincipal.html" rel="prev">Clique aqui</a> para voltar à página inicial.<br>
+    <h1>Formatações de textos</h1>
+    <p>
+        <a href="00menu.html" rel="prev">Menu inicial</a> para voltar à página inicial.<br>
     </p>
+    <hr>
+    <h1>Principais Formatações de texto</h1>    
+    <h2>Negrito / Destaque</h2>  
+    <p>
+        Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica: sem significado)<br>
+        Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica: tem significado)
+    </p>
+        <h2>Itálico / Ênfase</h2>
+        <p>
+            Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica: sem significado)<br>
+            Nessa frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica: tem significado)
+        </p>
+        <h2>Texto marcado</h2>
+        <p>
+            Nessa frase temos um <mark style="background: greenyellow;">termo marcado</mark> usando a tag &lt;mark&gt;(para mudar a cor da marcação, use a tag &lt;style&gt;)
+        </p>
+        <h2>Texto grande e texto pequeno</h2>
+        <p>
+            Nessa frase temos um <big>texto grande</big> e um <small>texto pequeno</small> usando as tags &lt;big&gt; e &lt;small&gt; respectivamente.
+        </p>
+        <h2>Texto inserido ou deletado</h2>
+        <p>
+            Nessa frase temos um texto inserido aqui: <ins>texto aqui</ins> com a tag &lt;ins&gt;.<br>
+            Nessa frase temos um texto deletado aqui: <del>texto aqui</del> com a tag &lt;del&gt;.
+        </p>
+        <h2>Texto sobrescrito e subscrito</h2>
+        <p>
+            Nessa frase temos um texto sobrescrito: x<sup>20</sup>+3 utilizando a tag &lt;sup&gt;<br>
+            Nessa frase temos um texto subscrito: H<sub>2</sub>O utilizando a tag &lt;sub&gt;
+        </p>
+    <hr>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte</h2>
+        <p>
+            O comando <code>documento.getElementById('teste')</code> é escrito em linguagem JavaScript (utilizamos a tag &lt;code&gt; para essa fonte).
+        </p>
+        <h2>Citações</h2>
+        <p>
+            Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q> (usamos a tag &lt;q&gt; para isso).
+        </p>
+        <h2>Citações completas</h2>
+        <p>
+            <blockquote cite="https://github.com/Thainno">
+                Olá, me chamo Tháinno!
+            </blockquote>
+            Aqui foi inserido apenas a referência do site onde há a citação original, não aparece o link diretamente em nosso site, apenas o algoritimo reconhece, como para informar o verdadeiro criador da frase, a tag usada é o &lt;blockquote&gt;
+        </p>
+        <h2>Abreviações</h2>
+        <p>
+            Ao mover o cursor sobre o elemento dentro da tag, é mostrado uma caixa de texto com o significado ou outra mensagem.
+        </p>
+        <p>
+            Estou estudando <abbr title='HyperText Markup Language'> HTML </abbr> e <abbr title='Cascading Style Sheets'>CSS</abbr> nesse momento! (usamos a tag &lt;abbr title=""&gt;)
+        </p>
+        <h2>Texto investido</h2>
+        <p>
+            <bdo dir="rtl">Estou aprendendo HTML E CSS nesse momento.</bdo> (utilizamos a tag &lt;bdo="rlt"&gt; ou &lt;bdo="ltr"&gt; direita para a esquerda/esquerda para a direita respectivamente)
+        </p>
 </body>
 </html>
