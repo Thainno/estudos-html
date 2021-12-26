@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
+
 body{
-    background-color: white;
+    background-color: blanchedalmond;
     color: black;
-    text-align: center;
+    list-style-position:inside;
+    font: normal 15px arial;
 }
 Div#logo{
     text-align: justify;
-    background-color: white;
+    background-color: blanchedalmond;
     width: auto;
     height: 70px;
 }
 h1.topo{
     background-color: #e44d26;
     color: white;
-    font: normal 40px arial;
-    border-bottom: 5px solid white;
+    font: normal 50px arial;
+    border-bottom: 5px solid blanchedalmond;
     margin: auto;
     padding: 20px 0px 20px 0px;
     text-align: center;
@@ -23,29 +25,36 @@ h1.topo{
 Div.menu{
     display: inline-block;
     background-color: #ffffff;
-    width: 150px;
-    height: 50px;
+    font: normal 15px arial;
+    width: 169px;
+    height: 30px;
     text-align: center;
-    padding: 30px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     border-radius: 10px;
+}
+div.menu > a{    
+    text-decoration: none;
+    color: black;
 }
 Div.menu:hover{
     background-color: #ff9567;
 }
 h2{
     background-color: #e44d26;
+    color: white;
+    font: normal 20px arial;
+    text-align: center;
     margin: 2px 0px 0px 0px;
     border-radius: 10px;
 }
-div#conteudo{
-    background-color: rgb(255, 255, 255);
-    margin: 2px 0px 2px 0px;
-    border-radius: 10px;
-    border: 15px solid white;
+a{
+    color: rgb(10, 12, 116);
+}
+
+.semStyle{
+    background: none;
+    color: black;
     text-align: justify;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
+
 
