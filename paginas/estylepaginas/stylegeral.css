@@ -7,18 +7,41 @@ body{
     list-style-position:inside;
     font: normal 15px arial;
 }
-Div#logo{
-    text-align: justify;
-    background-color: blanchedalmond;
-    width: auto;
-    height: 70px;
+
+header{
+    background: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.menuheader{
+    display: flex;
+    list-style: none;
+}
+
+.menuheader li{
+    margin-right: 10px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 100px;
+    height: 30px;
+}
+
+.menuheader a{
+    text-decoration: none;
+}
+
 h1.topo{
     background-color: #e44d26;
     color: white;
     font: normal 50px arial;
     border-bottom: 5px solid blanchedalmond;
     margin: auto;
+    border-radius: 10px;
     padding: 20px 0px 20px 0px;
     text-align: center;
 }
@@ -30,6 +53,7 @@ Div.menu{
     height: 30px;
     text-align: center;
     padding: 10px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
     border-radius: 10px;
 }
 div.menu > a{    
@@ -47,8 +71,17 @@ h2{
     margin: 2px 0px 0px 0px;
     border-radius: 10px;
 }
+
+div.conteudo{
+    background-color: white;
+    padding: 5px 0px 5px 15px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
 a{
     color: rgb(10, 12, 116);
+    padding: 10px;
 }
 
 .semStyle{
